@@ -1,0 +1,11 @@
+.log-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.log-form input{
+    max-width: 400px;
+    text-align: center;
+}

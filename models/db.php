@@ -1,18 +1,17 @@
 <?php
-class ConnectionFactory {
-    private $dbType ='mysql';
-    private $host = 'localhost';
-    private $dbname = 'bemol_omni';
-    private $username = 'root';
-    private $password = '';
-    private $conn;
-    function __construct(){
-        $this->conn = new PDO($this->dbType.":host=".$this->host.";dbname=".$this->dbname.", ".$this->username.", ".$this->password);
-    }
+#configuração mysql
+$servidor = "127.0.0.1";
+$usuario = "root";
+$senha = "";
+$database = "bemol_omni";
 
-    public function getConnection(){
-        $connection = $this->conn;
-        return $connection;
-    }
-} 
-
+try {
+    $dbh = new PDO('mysql:host='.$servidor.';dbname='.$database.'', $usuario, $senha);
+    $consulta = $dbh->query("SET NAMES 'utf8");
+    $consulta = $dbh->query("SET character_set_connection=utf8");
+    $consulta = $dbh->query("SET character_set_client=utf8");
+    $consulta = $dbh->query("SET character_set_results=utf8");
+} catch (PDOException $e) {
+    echo "Erro!: Não foi possível conectar ao Banco de Dados " . $e->getMessage() . "<br/>";
+    die();
+}

@@ -4,11 +4,16 @@ class PagesController {
         include_once './views/VW_login.php';
     }
 
-    public function home() {
-        include_once './views/VW_home.php';
+    public function criar_conta() {
+        include './views/VW_cadastrarUsuario.php';
     }
 
-    public function conta(){
-        include_once './views/VW_cadastrarUsuario.php';
-    }
+    public function Usuario_Home(){
+        session_start();
+        if(isset($_SESSION['Nome'])){
+            include './views/VW_usuario_home.php';
+        }else{
+            include './views/404.php';
+        }
+    } 
 }

@@ -28,8 +28,8 @@ Webserver (C:\xampp), e clone o projeto na pasta htdocs.
 Na raiz do projeto existe um arquivo chamado "database_script.sql", abra esse arquivo pelo Workbench (File> Open SQL script..) 
 e após isso o exetute para criar a base de dados da aplicação
 
-Após isso ligue o serviço de Servidor Apache do XAMPP, abra uma nova aba no seu navegador e digite 'http://localhost/BemolOmni/' na barra de endereço, ou clique no link abaixo: 
+Após isso ligue o serviço de Servidor Apache do XAMPP, abra uma nova aba no seu navegador e digite 'http://localhost/BemolOmni/-master' na barra de endereço, ou clique no link abaixo: 
 
-<a href="http://localhost/BemolOmni/" target="_blank">http://localhost/BemolOmni/</a>
+<a href="http://localhost/BemolOmni-master/" target="_blank">http://localhost/BemolOmni-master/</a>
 
 E pronto! o projeto deve executar normalmente no seu navegador 

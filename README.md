@@ -32,4 +32,4 @@ Após isso ligue o serviço de Servidor Apache do XAMPP, abra seu navegador e di
 
 http://localhost/BemolOmni/
 
-O projeto deve executar normalmente, caso isso não ocorra deixe um
+E pronto! o projeto deve executar normalmente no seu navegador 
